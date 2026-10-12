@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Campus Book Exchange</title>
+
+</head>
+
+<body>
+
+    <h1 id="heading">Campus Book Exchange</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse-books.html">Browse Books</a>
+        <a href="list-books.html">List a Book</a>
+    </nav>
+
+    <h2>Welcome Students!</h2>
+
+    <p>
+        Exchange your old books with other students
+        and find books you need.
+    </p>
+
+    <button onclick="changeHeading()">Change Heading</button>
+    <button onclick="changeColor()">Change Book Colour</button>
+    <button onclick="toggleBooks()">Show/Hide Books</button>
+
+    <h2>Featured Books</h2>
+
+    <div id="books">
+
+        <div class="book" id="book1">
+            <img src="images/python.jpg" alt="Python Programming book cover" class="book-image">
+            <h3>Python Programming</h3>
+            <p>Author: Eric Matthes</p>
+            <p>Category: Programming</p>
+        </div>
+
+        <div class="book" id="book2">
+            <img src="images/alchemist.jpg" alt="The Alchemist book cover" class="book-image">
+            <h3>The Alchemist</h3>
+            <p>Author: Paulo Coelho</p>
+            <p>Category: Fiction</p>
+        </div>
+
+        <div class="book" id="book3">
+            <img src="images/richdad.jpg" alt="Rich Dad Poor Dad book cover" class="book-image">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Author: Robert Kiyosaki</p>
+            <p>Category: Finance</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

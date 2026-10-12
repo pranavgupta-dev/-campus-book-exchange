@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Books</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <h1>Browse Books</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse-books.html">Browse Books</a>
+        <a href="list-books.html">List a Book</a>
+    </nav>
+
+     <h2>Books Available for Exchange</h2>
+
+      <div class="book" id="browseBook1">
+        <img src="images/python.jpg" alt="Python Programming book cover" class="book-image">
+        <h3>Python Programming</h3>
+        <p>Author: Eric Matthes</p>
+        <p>Category: Programming</p>
+        <p>Condition: Good</p>
+        <button onclick="requestBook(this)">Mark as Requested</button>
+        <p class="message"></p>
+    </div>
+
+    <div class="book" id="browseBook2">
+        <img src="images/alchemist.jpg" alt="The Alchemist book cover" class="book-image">
+        <h3>The Alchemist</h3>
+        <p>Author: Paulo Coelho</p>
+        <p>Category: Fiction</p>
+        <p>Condition: Very Good</p>
+        <button onclick="requestBook(this)">Mark as Requested</button>
+        <p class="message"></p>
+    </div>
+
+    <div class="book" id="browseBook3">
+        <img src="images/richdad.jpg" alt="Rich Dad Poor Dad book cover" class="book-image">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>Author: Robert Kiyosaki</p>
+        <p>Category: Finance</p>
+        <p>Condition: Good</p>
+        <button onclick="requestBook(this)">Mark as Requested</button>
+        <p class="message"></p>
+    </div>
+
+    <div class="book" id="browseBook4">
+        <img src="images/algorithms.jpg" alt="Introduction to Algorithms book cover" class="book-image">
+        <h3>Introduction to Algorithms</h3>
+        <p>Author: Thomas H. Cormen</p>
+        <p>Category: Computer Science</p>
+        <p>Condition: Fair</p>
+        <button onclick="requestBook(this)">Mark as Requested</button>
+        <p class="message"></p>
+    </div>
+
+    <h2>Find a Book</h2>
+    <input type="text" id="bookTitle" placeholder="Enter book title">
+    <button onclick="showBook()">Show Book</button>
+    <p id="bookResult"></p>
+
+    <button onclick="changeBrowseColor()">Change Book Card</button>
+</body>
+</html>

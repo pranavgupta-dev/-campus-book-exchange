@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightyellow;
+    text-align: center;
+    margin: 20px;
+}
+
+nav {
+    background-color: lightblue;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 15px;
+    color: black;
+}
+
+.book {
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px auto;
+    width: 260px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input, select {
+    padding: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    color: green;
+}
+
+.book-image {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}

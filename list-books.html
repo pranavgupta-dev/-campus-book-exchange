@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List a Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>List a Book</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse-books.html">Browse Books</a>
+        <a href="list-books.html">List a Book</a>
+    </nav>
+
+    <h2 id="formHeading">Enter Book Details</h2>
+
+    <button onclick="changeFormHeading()">Change Heading Size</button>
+    <button onclick="toggleForm()">Show/Hide Form</button>
+
+    <form id="bookForm" onsubmit="submitBook(event)">
+        <p>
+            <label>Student Name:</label><br>
+            <input type="text" id="studentName">
+        </p>
+        <p>
+            <label>Book Title:</label><br>
+            <input type="text" id="newBookTitle">
+        </p>
+        <p>
+            <label>Author:</label><br>
+            <input type="text" id="author">
+        </p>
+        <p>
+            <label>Subject/Category:</label><br>
+            <input type="text" id="category">
+        </p>
+        <p>
+            <label>Book Condition:</label><br>
+            <select id="condition">
+                <option value="">Select condition</option>
+                <option>Like New</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Fair</option>
+            </select>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="formMessage"></p>
+</body>
+</html>
